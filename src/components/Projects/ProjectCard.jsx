@@ -4,13 +4,6 @@ import { Card } from '../common/Card'
 export const ProjectCard = ({ project }) => {
   return (
     <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-      {project.image && (
-        <img
-          src={project.image}
-          alt={project.title}
-          className="-mx-6 -mt-6 mb-6 w-[calc(100%+3rem)] max-w-none h-48 object-cover"
-        />
-      )}
       <div className="space-y-4">
         <h3 className="text-xl font-bold text-gray-900 dark:text-white">
           {project.title}
@@ -68,7 +61,6 @@ ProjectCard.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     longDescription: PropTypes.string,
-    image: PropTypes.string,
     tags: PropTypes.arrayOf(PropTypes.string).isRequired,
     links: PropTypes.shape({
       github: PropTypes.string,
