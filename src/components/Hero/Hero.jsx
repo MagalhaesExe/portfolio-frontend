@@ -14,6 +14,11 @@ export const Hero = () => {
     >
       <Container>
         <div className="text-center space-y-6">
+          <img
+            src="/images/alex-magalhaes.jpeg"
+            alt="Alex Magalhães"
+            className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover mx-auto border-4 border-slate-700 dark:border-slate-800"
+          />
           <h1 className="text-4xl md:text-6xl font-bold">
             Olá, sou Alex Magalhães
           </h1>
@@ -25,7 +30,7 @@ export const Hero = () => {
             <Button variant="primary" size="lg" onClick={handleScrollToProjects}>
               Ver meus projetos
             </Button>
-            <a href="/cv-alex-magalhaes.pdf" download>
+            <a href="/CurriculoAlexMagalhaesDevFull.pdf" download>
               <Button variant="outline" size="lg" className="!text-white !border-gray-400 hover:!bg-white/10">
                 <Download size={18} />
                 Baixar CV
@@ -35,7 +40,7 @@ export const Hero = () => {
 
           <div className="flex items-center justify-center gap-6 pt-4">
             <a
-              href="https://github.com/seu-usuario"
+              href="https://github.com/MagalhaesExe"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
@@ -44,7 +49,7 @@ export const Hero = () => {
               <Github size={28} />
             </a>
             <a
-              href="https://linkedin.com/in/seu-usuario"
+              href="https://linkedin.com/in/alexmagalhaesjr"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"

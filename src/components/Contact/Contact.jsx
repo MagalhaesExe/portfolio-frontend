@@ -18,7 +18,7 @@ export const Contact = () => {
         <div className="max-w-2xl mx-auto">
           {success && (
             <div className="mb-6 p-4 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-lg">
-              ✓ Mensagem enviada com sucesso! Vou responder em breve.
+              Mensagem enviada com sucesso! Vou responder em breve.
             </div>
           )}
 
