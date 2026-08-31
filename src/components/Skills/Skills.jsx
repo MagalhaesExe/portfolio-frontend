@@ -6,41 +6,51 @@ const SKILLS = [
     category: 'Frontend',
     items: [
       'React',
+      'Vue.js',
       'JavaScript',
-      'TypeScript',
-      'HTML/CSS',
+      'HTML5',
+      'CSS3',
       'Tailwind CSS',
       'Vite',
       'Responsive Design',
     ],
   },
   {
+    category: 'Mobile',
+    items: ['Flutter', 'Dart'],
+  },
+  {
     category: 'Backend',
     items: [
       'Node.js',
       'Express.js',
+      'FastAPI',
+      'SQLAlchemy',
       'REST APIs',
-      'Autenticação JWT',
-      'PostgreSQL',
-      'MySQL',
       'Nodemailer',
+      'Python',
     ],
+  },
+  {
+    category: 'Sistemas & Kernel',
+    items: ['C', 'C++', 'Linux'],
   },
   {
     category: 'Banco de Dados',
-    items: ['PostgreSQL', 'MySQL', 'Queries SQL', 'Design relacional'],
+    items: [
+      'PostgreSQL',
+      'MySQL',
+      'Queries SQL',
+      'Design relacional',
+    ],
+  },
+  {
+    category: 'Redes & Infraestrutura',
+    items: ['FTTH', 'Roteamento'],
   },
   {
     category: 'Ferramentas & DevOps',
-    items: [
-      'Docker',
-      'Git/GitHub',
-      'Linux',
-      'FTTH',
-      'Roteamento',
-      'Vercel',
-      'Render/Railway',
-    ],
+    items: ['Docker', 'Git/GitHub', 'Nginx', 'Vercel'],
   },
 ]
 
@@ -52,7 +62,7 @@ export const Skills = () => {
           Habilidades
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {SKILLS.map(({ category, items }) => (
             <SkillCategory key={category} category={category} items={items} />
           ))}
